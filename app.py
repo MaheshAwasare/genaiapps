@@ -11,7 +11,7 @@ st.subheader(":orange[Powered by Google gemini-pro model]")
 st.subheader("", divider='rainbow')
 jokeType = st.sidebar.selectbox(
     "Select Joke types?",
-    ("General", "Office", "Programming", "Dark", "Pun", "Spooky")
+    ("EveryDay Fun", "Office", "Programming", "Dark", "Pun", "Spooky")
 )
 
 noOfJokes = st.sidebar.selectbox(
