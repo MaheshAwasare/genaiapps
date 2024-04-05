@@ -21,7 +21,7 @@ noOfJokes = st.sidebar.selectbox(
 
 
 def getJoke(noofjokes, joketype):
-    prompt_string = f"Tell me COMPLETELY NEW (do not forget this) {noofjokes}  {joketype} jokes"
+    prompt_string = f"Tell me COMPLETELY NEW (do not forget this) {noofjokes}  {joketype} jokes. Do not include scarecrow joke please"
     gemini_llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.3, google_api_key=google_api_key)
     result = gemini_llm.invoke(prompt_string)
     st.header(':blue[Generated Jokes]')
