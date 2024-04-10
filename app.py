@@ -3,7 +3,7 @@ import os
 #from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-GOOGLE_API_KEY = "AIzaSyCnmP6DL8T-nquF-Okas_24TeiMzGHwrc4"
+GOOGLE_API_KEY = "tt"
 #load_dotenv()  # API key stored in .env file for security purpose
 google_api_key = GOOGLE_API_KEY
 st.header(":blue[Joke App  Using Generative AI]")  # App title
