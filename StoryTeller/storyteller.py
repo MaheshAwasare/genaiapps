@@ -28,7 +28,7 @@ st.title("Personalized Storyteller")
 genre = st.selectbox("Select Story Genre:", ["Fantasy", "Mystery", "Adventure", "Romance"])
 
 # Number of characters selection
-num_characters = st.slider("Number of Characters:", min_value=1, max_value=10, value=5)
+num_characters = st.slider("Number of Characters:", min_value=1, max_value=7, value=2)
 
 # Ending selection
 ending = st.selectbox("Select Ending:", ["Happy", "Sad", "Comedy"])
@@ -40,5 +40,10 @@ if st.button("Generate Story"):
     # Call function to generate story
     story = generate_story(genre, num_characters, ending, setting)
     # Display generated story
-    st.write("Your personalized story:")
+    st.subheader("Your personalized story:")
+    st.markdown(f"**Genre:** {genre}")
+    st.markdown(f"**Number of Characters:** {num_characters}")
+    st.markdown(f"**Ending:** {ending}")
+    st.markdown(f"**Setting:** {setting}")
+    st.write("")
     st.write(story)
