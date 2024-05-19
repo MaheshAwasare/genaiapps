@@ -64,9 +64,8 @@ def generate_ending(ending_input):
 def get_characters(storyline):
     OLLAMA_ENDPOINT = "http://localhost:11434/api/generate"
     global global_storyline
-    system_prompt = ('Extract ONLY character names from given storyline ')
-    conversation_string = global_storyline
-    OLLAMA_PROMPT = f"{system_prompt}: {conversation_string}"
+    system_prompt = ('Extract ONLY people names like John, Rohit from given storyline. Just give list of names, no other words in this answer. ')
+    OLLAMA_PROMPT = f"{system_prompt}: {storyline}"
     OLLAMA_DATA = {
         "model": "phi",
         "prompt": OLLAMA_PROMPT,
@@ -109,7 +108,8 @@ elif option == "Generate Introduction Scenes":
     # Retrieve central storyline from global variable
     central_storyline = global_storyline
     # Retrieve characters from central storyline
-    characters = get_characters()
+    characters = get_characters(central_storyline)
+    print(f"Characters {characters}")
     if not characters:
         st.warning("Characters not found in the storyline.")
     else:
