@@ -3,7 +3,7 @@ langchain
 beautifulsoup4
 chromadb
 gradio
-streamlit
+gracio
 accelerate==0.21.0
 peft==0.4.0
 bitsandbytes==0.40.2
