@@ -58,28 +58,7 @@ To get started with any of these projects, clone the repository and follow the s
 - Python 3.7 or higher
 - Required libraries (listed in `requirements.txt`)
 
-### Installation 📥
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/AI-Projects-Collection.git
-    cd AI-Projects-Collection
-    ```
 
-2. Install the dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Run the project of your choice:
-    ```bash
-    python <project_name>.py
-    ```
-
----
-
-
-
----
 
 ## License 📄
 
