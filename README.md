@@ -1,7 +1,6 @@
 # AI Projects Collection 🚀
 
-Welcome to the **AI Projects Collection**! This repository contains a collection of innovative AI-powered applications, each designed to showcase the power of **Generative AI (Gen AI)** in various fields. From health and wellness to content creation, these applications leverage cutting-edge AI models to provide real-world solutions.
-
+Welcome to the **AI Projects Collection**! This repository contains a collection of innovative AI-powered applications, each designed to showcase the power of **Generative AI (Gen AI)** in various fields. 
 ## Table of Contents 📑
 
 - [HealWithYogaAndDietApp](#healwithyogaanddietapp)
